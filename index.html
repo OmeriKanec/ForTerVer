@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Сочетания</title>
 </head>
 <body>
+<div class="menu" style="display: flex; width: 100%; justify-content: center">
+    <form>
+    <button id="factorial" type="submit">Факториал</button>
+    </form>
+    <button id="combinations">Сочетания</button>
+    <button id="perestan">Перестановки</button>
+    <button id="perestansPvt">Перестановки с повторениями</button>
+    <button id="razmesh">Размещения</button>
+    <button id="urn">Урновая модель, все меченные</button>
+    <button id="urnsr">Урновая модель, r меченных</button>
+</div>
+<div class="forForm" id="place-for-form">
+<form class="form" id="form-for-factorial">
+    <label for="form-for-factorial">Факториал</label><p></p>
+    <label for="input-for-factorial"></label><p></p>
+    <input type="number" class="input" id="input-for-factorial" placeholder="Введите число, факториал которого нужен"><p></p>
+    <button type="submit">Вычислить</button><p></p>
+    <div id="answer" class="answer"></div>
+</form>
+</div>
 
 </body>
+<script type="module" src="js/combinations.js"></script>
 </html>

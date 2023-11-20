@@ -1,0 +1,10 @@
+body {
+    color: #ffffff;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.answer {
+    word-break: break-all;
+}
