@@ -71,13 +71,13 @@ razmshBtn.addEventListener("click", (event) => {
         event.preventDefault();
         let k = Number(razmK.value);
         let n = Number(razmN.value);
-        if (k > n) {
-            alert("k не может быть больше n");
-            answer.innerText = "";
-        } else {
             if (razmPovt.checked) {
                 answer.innerText = "Ответ: " + razmsWithPovtr(n, k);
             } else {
+                if (k > n) {
+                    alert("k не может быть больше n");
+                    answer.innerText = "";
+                }else {
                 let a = factorialFromTo(n, n-k);
                 answer.innerText = "Ответ: " + a;
             }
@@ -105,12 +105,13 @@ CombBtn.addEventListener("click", (event) => {
         event.preventDefault();
         let k = Number(combK.value);
         let n = Number(combN.value);
-        if (k > n) {
-            alert("k не может быть больше n");
-            answer.innerText = "";
-        } else {
+
             if (combPovt.checked) {
                 answer.innerText = "Ответ: " + combWithPovtr(n, k);
+            } else {
+                if (k > n) {
+                alert("k не может быть больше n");
+                answer.innerText = "";
             } else {
                 let a = comb(n, k);
                 answer.innerText = "Ответ: " + a;
